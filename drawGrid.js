@@ -31,13 +31,13 @@ $(document).ready(function() {
         array.push([])
           for(var y = 0; y < 50; y++) {
               var unit = $("<div class='unit'></div>");
-              unit.text(y)
+              //  unit.text(y)
               unit.addClass("x"+x +"y" +y)
               unit.attr("activated","nul")
               array[x].push(unit)
               unit.appendTo('#container');
           }
-
+          console.log("hi");
       }
     array[0][25].attr("activated","black");
 
@@ -55,7 +55,7 @@ $(document).ready(function() {
     for (rowIteration = 1; rowIteration < array.length; rowIteration++)
     {
         previousRow = array[rowIteration-1]
-      
+
         for (cellIteration = 0; cellIteration < array.length; cellIteration++)
         {
           // rule = previousRow.slice(cellIteration,cellIteration+3)
