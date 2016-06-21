@@ -38,6 +38,7 @@ $(document).ready(function() {
               unit.appendTo('#container');
           }
           console.log("hi");
+          console.log("2");
       }
     array[0][25].attr("activated","black");
 
